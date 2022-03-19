@@ -11,8 +11,8 @@ IP_address = str(sys.argv[1])
 client = ClientSocket(IP_address)
 client.connect()
 
-sentence = input("Input lowercase sentence:")
+sentence = input("Type a sentence:")
 
-client.send(1, "User", sentence)
+client.send(0, "User", sentence)
 
 client.close()
